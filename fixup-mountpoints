@@ -14,7 +14,7 @@ shift
 echo "Fixing mount-points for device $DEVICE"
 
 case "$DEVICE" in
-    "j5nltexx"|"j500fn")
+    "j5nlte"|"j5nltexx"|"j5lte")
         sed -i \
             -e 's block/bootdevice/by-name/aboot mmcblk0p5 ' \
             -e 's block/bootdevice/by-name/apnhlos mmcblk0p1 ' \
